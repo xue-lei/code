@@ -6,13 +6,14 @@ import sidebar from '../container/nav/sidebar';
 //引入需要用到的页面组件
 //import About from '../container/page/about';
 //引入一些模块
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route,Redirect} from "react-router-dom";
 function router(){
     return (
         <Router>
-            <Route path="/" component={sidebar} />
-            <Route path="/home" component={home} />
-            <Route path="/about" component={about} />
+            <Route path="/" component={sidebar}/>
+            <Redirect from="/" to="/home"/>
+            <Route path="/home" component={home}/>
+            <Route path="/about" component={about}/>
         </Router>
             );
 }
