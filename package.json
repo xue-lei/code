@@ -11,6 +11,7 @@
     "@types/react": "^16.9.17",
     "@typescript-eslint/eslint-plugin": "^2.8.0",
     "@typescript-eslint/parser": "^2.8.0",
+    "antd": "^3.26.7",
     "awesome-typescript-loader": "^5.2.1",
     "babel-eslint": "10.0.3",
     "babel-jest": "^24.9.0",
